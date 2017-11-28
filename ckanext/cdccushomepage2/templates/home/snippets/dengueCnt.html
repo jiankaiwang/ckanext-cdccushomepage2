@@ -1,0 +1,16 @@
+<div class="container-4 general-font-family">
+  <div class="container-title general-font-1">
+    {{ h.getLangLabel("Yearly Dengue Cases","歷年登革熱病例數") }}&nbsp;-&nbsp;
+    <a href="#">{{ h.getLangLabel("Data","資料") }}</a>
+  </div>
+  <hr class="container-sepLine"></hr>
+
+  <div class="container-subtitle general-font-1" style="margin-bottom: 10px;">
+    <span id="dengueYearCountPreText"></span>
+    <span style="font-size: 24px; color: rgba(85,128,170,1);" id="dengueYearCountText"></span>
+  </div>
+  <div id="dengueYearCountContainer" style="width: 100%; height: 60%;">
+    <div id="dengueYearCount" style="width: 100%; height: 100%;"></div>
+  </div>
+
+</div>

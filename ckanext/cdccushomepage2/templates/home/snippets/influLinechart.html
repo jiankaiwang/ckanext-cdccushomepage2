@@ -1,0 +1,14 @@
+<div class="container-1 general-font-family">
+  <div class="container-title general-font-1">
+    {{ h.getLangLabel("Out-patient Clinicis for Influenza","歷年健保門診類流感就診人次") }}
+    &nbsp;-&nbsp;<a href="#">{{ h.getLangLabel("Data","資料") }}</a>
+  </div>
+  <hr class="container-sepLine"></hr>
+  <div class="container-subtitle general-font-1" style="margin-bottom: 10px;">
+     <span id="influLinechartYear"></span> {{ h.getLangLabel(" Week ","年第") }} <span id="influLinechartWeek"></span> {{ h.getLangLabel(" Outpatient Ratio","週就診率") }} <span style="font-size: 24px; color: rgba(85,128,170,1);" id="influLinechartRatio"></span>
+  </div>
+  <div id="influLinechartContainer" style="width: 100%; height: 70%; min-width: 100%; min-height: 70%;">
+    <div id="influLinechartBody" style="width: 100%; height: 100%;"></div>
+    <!--<div id="influLinePrechartBody" style="width: 100%; height: 100%;">準備更新中 ...</div>-->
+  </div>
+</div>

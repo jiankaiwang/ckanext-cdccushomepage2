@@ -1,0 +1,136 @@
+<div role="main" class="homepage-bgimg">
+  {#
+    date: 2016/03/03
+    designed: code here is not designed by RWD
+  #}
+  <div class="container">
+    <div class="row row1">
+      {#
+        date: 2016/03/03
+        design: already designed by RWD
+      #}
+      <div class="span6 col1">
+        <div style="width: 100%; height: 200px; display: inline-block;"></div>
+      </div>
+      <div class="span6 col2 desktop-search">
+        {% block search %}
+          {% snippet 'home/snippets/search.html' %}
+        {% endblock %}
+      </div>
+    </div>
+    <div class="row row1 homepage-title general-font-family">
+    {{  h.getLangLabel("Welcome to Taiwan CDC Open Data Portal.", "歡迎來到疾病管制署資料開放平台") }}
+    </div>
+    <div class="row row1 homepage-subtitle general-font-family">
+    {{  h.getLangLabel("To analyze is to believe.","透過互動式圖表、地圖與儀表板讓您了解公開資料價值。") }}
+    </div>
+  </div>
+</div>
+<div role="main">
+  {#
+    date: 2016/03/03
+    designed: code here is not designed by RWD
+  #}
+  <div class="container">
+    <div class="row row1 section-topic general-font-family">
+     {{  h.getLangLabel("Communicable Disease Prevention Information", "重點防疫資訊") }}
+    </div>
+    {# start right field #}
+    <div class="row row1" style="margin-bottom: 10px;">
+      <div class="span4 col1">
+        {# NS1 配置地圖  #}
+        {% snippet 'home/snippets/denguens1.html' %}
+      </div>
+      <div class="span4 col3">
+        <div class="row1">
+          <div class="col1" style="margin-bottom: 10px;">
+            {# 登革熱病例數 #}
+            {% snippet 'home/snippets/dengueCnt.html' %}
+          </div>
+        </div>
+        <div class="row1">
+          <div class="col1 mb-hg-block-margin">
+            {# 腸病毒分離情況 #}
+            {% snippet 'home/snippets/entroLBC.html' %}
+          </div>
+        </div>
+      </div>
+      <div class="span4 col2">
+        <div class="row1">
+          <div class="col1" style="margin-bottom: 10px;">
+            {# 登革熱年月病例線圖 #}
+            {% snippet 'home/snippets/dengueMonthTrend.html' %}
+          </div>
+        </div>
+        {# bottom field #}
+        <div class="row1">
+          <div class="col1">
+            {# 腹瀉圓餅圖 #}
+            {% snippet 'home/snippets/diarrheaPieCnt.html' %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row1" style="margin-bottom: 10px;">
+      <div class="span6 col1">
+        {# 類流感線圖 #}
+        {% snippet 'home/snippets/influLinechart.html' %}
+      </div>
+      <div class="span6 col2">
+        {# HIV 堆疊圖 #}
+        {% snippet 'home/snippets/hivBC.html' %}
+      </div>
+    </div>
+    {# end of right field #}
+  </div>
+</div>
+
+<div role="main" class="homepage-tech-section">
+  <div class="container">
+    <div class="row row1 section-topic general-font-family">
+      {{ h.getLangLabel("Test Plan for Applications of Emerging Technologies", "新興科技測試計畫") }}
+    </div>
+    <div class="row row2">
+      <div class="span12">
+        {# LASS #}
+        {% snippet 'home/snippets/lass.html' %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div role="main" class="homepage-data-section-2">
+  <div class="container">
+    <div class="row row1 section-topic general-font-family">
+     {{ h.getLangLabel("Browser more topics and data.", "瀏覽更多的資料與內容") }}
+    </div>
+    <div class="row row2">
+      <div class="span6 col1">
+        {% block promoted %}
+          {% snippet 'home/snippets/customized_promoted.html' %}
+        {% endblock %}
+        {% block stats %}
+          {% snippet 'home/snippets/customized_stats.html' %}
+        {% endblock %}
+      </div>
+      <div class="span6 col2">
+        {% block popular %}
+          {% snippet 'home/snippets/customized_popular.html' %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+  {#<div class="row row1 section-topic general-font-family"> <!-- hr --> </div>#}
+  <div class="container">
+    <div class="span12 col1 hp-category-margin hp-category-margin-mb" style="margin-left: 6px;">
+        {# Note: this featured_group block is used as an example in the theming
+           tutorial in the docs! If you change this code, be sure to check
+           whether you need to update the docs. #}
+        {# Start template block example. #}
+        {#{% block featured_group %}
+          {% snippet 'home/snippets/featured_group.html' %}
+        {% endblock %}#}
+        {# End template block example. #}
+    </div>
+  </div>
+</div>

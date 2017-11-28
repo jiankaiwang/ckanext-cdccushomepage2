@@ -1,0 +1,14 @@
+<div class="container-1 general-font-family">
+  <div class="container-title general-font-1">
+    {{ h.getLangLabel("Percentage of HIV Age Group","近 10 年 HIV 病例各年齡層百分比") }}&nbsp;-&nbsp;
+    <a href="#">{{ h.getLangLabel("Data","資料") }}</a>
+  </div>
+  <hr class="container-sepLine"></hr>
+  <div class="container-subtitle general-font-1" style="margin-bottom: 10px;">
+    <span id="hivBCYear" style="font-size: 24px; color: rgba(85,128,170,1);"></span>{{ h.getLangLabel(" HIV Determined Cases are in age "," 年 HIV 確
+定病例主要年齡層 ") }} <span id="hivBCWeek" style="font-size: 24px; color: rgba(85,128,170,1);"></span> <span style="font-size: 24px; color: rgba(85,128,170,1);" id="hivBCRatio"></span>
+  </div>
+  <div id="hivBCContainer" style="width: 100%; height: 70%; min-width: 100%; min-height: 70%; margin-top: 0px;">
+    <div id="hivBCBody" style="width: 100%; height: 100%;"></div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="container-4 general-font-family">
+  <div class="container-title general-font-1">
+    {{ h.getLangLabel("Monthly Dengue Cases","登革熱年月病例數") }}&nbsp;-&nbsp;
+    <a href="#">{{ h.getLangLabel("Data","資料") }}</a>
+  </div>
+  <hr class="container-sepLine"></hr>
+
+<div class="container-subtitle general-font-1" style="margin-bottom: 5px; margin-top: -20px;">
+    <div class="container-list general-font-1">
+      <ul class="container-list-body general-font-family">
+        <li style="color: rgba(0,0,0,1); font-size: 12px;">
+          <span class="container-list-item"></span>
+          <br>
+          <span id="dengueLinechartMonth" class="container-list-value"></span>
+        </li>
+      </ul>
+    </div>
+</div>
+<div id="dengueLineChartContainer" style="width: 100%; height: 60%; min-width: 100%; min-height: 60%;">
+  <div id="dengueLineChartBody" style="width: 100%; height: 100%;"></div>
+</div>
+
+
+</div>
